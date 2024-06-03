@@ -15,9 +15,8 @@
 
       .pricing-container {
         display: flex;
-        gap: 15px;
-        justify-content: center;
-        height: 90vh;
+        gap: 30px;
+        height: 100vh;
         align-items: center;
       }
       
@@ -63,7 +62,7 @@
       }
 
       li {
-        margin-bottom: 10px;
+        margin-bottom: 20px;
       }
 
       .plan-button {
@@ -72,12 +71,27 @@
         color: white;
         border-radius: 5px;
         height: 40px;
+        width: 70px;
       }
 
       /* Hint: What can you do with a media query and flexbox? */
       @media (max-width: 1250px) {
-        
-        
+       .pricing-container {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+       } 
+
+       .pricing-plan{
+        display: flex;
+        flex-direction: column;
+        flex-grow: 0;
+        flex-shrink: 0;
+        width: 375px;
+        justify-content: center;
+        height: 50vh;
+        align-items: center;
+       }
       }
     </style>
   </head>
